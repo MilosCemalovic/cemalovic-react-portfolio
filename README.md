@@ -1,3 +1,7 @@
+# cemalovic-react-portfolio
+
+This is web portfolio for Milos Cemalovic using React principles
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
