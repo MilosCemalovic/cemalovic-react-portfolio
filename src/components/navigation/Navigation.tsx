@@ -1,9 +1,9 @@
+import { useEffect, useState } from "react"
 import { Link } from "react-scroll"
+import { FiDownload, FiGithub, FiLinkedin } from "react-icons/fi"
 import profileImage from "../../assets/img/cemalovic-milos-portfolio-img-1.jpg"
 import cv from "../../assets/img/CV_MilosCemalovic.pdf"
 import styles from "./Navigation.module.scss"
-import { FiDownload, FiGithub, FiLinkedin } from "react-icons/fi"
-import { useEffect, useState } from "react"
 
 interface NavigationItem {
   id: string
