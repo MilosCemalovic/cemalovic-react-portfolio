@@ -1,0 +1,37 @@
+.hero {
+  height: 100vh;
+  background: linear-gradient(
+      to right,
+      rgba(102, 102, 102, 0.7),
+      rgba(102, 102, 102, 0.7)
+    ),
+    url("../../assets/img/cemalovic-milos-portfolio-img-2.jpg");
+  background-size: cover;
+  background-position: start;
+  display: flex;
+  align-items: center;
+  padding-left: 35rem; // Offset for fixed navigation
+}
+
+.content {
+  max-width: 60rem;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  line-height: 1.2;
+}
+
+.greeting {
+  display: block;
+  text-align: center;
+  font-size: 6rem;
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  display: block;
+  font-size: 3rem;
+  font-weight: 300;
+}
