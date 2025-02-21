@@ -1,6 +1,9 @@
 import { Link } from "react-scroll"
 import profileImage from "../../assets/img/cemalovic-milos-portfolio-img-1.jpg"
+import cv from "../../assets/img/CV_MilosCemalovic.pdf"
 import styles from "./Navigation.module.scss"
+import { FiDownload, FiGithub, FiLinkedin } from "react-icons/fi"
+import { useState } from "react"
 
 interface NavigationItem {
   id: string
@@ -8,6 +11,8 @@ interface NavigationItem {
 }
 
 const Navigation = () => {
+  const [activeSection, setActiveSection] = useState("top")
+
   const NAV_ITEMS: NavigationItem[] = [
     { id: "experience", label: "Experience" },
     { id: "skills", label: "Skills" },
@@ -17,16 +22,23 @@ const Navigation = () => {
   ]
 
   return (
-    <nav>
-      <img
-        src={profileImage}
-        alt="Milos Cemalovic"
-        className={styles.profileImage}
-      />
+    <nav className={styles.navigation}>
+      <div className={styles.profile}>
+        <img
+          src={profileImage}
+          alt="Miloš Ćemalović"
+          className={styles.profileImage}
+        />
+      </div>
 
-      <ul className="list-unstyled">
+      <ul className={styles.navList}>
         {NAV_ITEMS.map((item) => (
-          <li key={item.id}>
+          <li
+            key={item.id}
+            className={`${styles.navItem} ${
+              activeSection === item.id ? styles.active : ""
+            }`}
+          >
             <Link
               className={styles.navLink}
               to={item.id}
@@ -40,6 +52,23 @@ const Navigation = () => {
           </li>
         ))}
       </ul>
+
+      <div className={styles.socialWrapper}>
+        <a href={cv} className={styles.cvButton} download>
+          <FiDownload className={styles.icon} />
+          Download CV
+        </a>
+
+        <div className={styles.socialLinks}>
+          <a href="https://github.com/MilosCemalovic" target="_blank">
+            <FiGithub className={styles.socialIcon} />
+          </a>
+
+          <a href="https://linkedin.com/in/milos-cemalovic" target="_blank">
+            <FiLinkedin className={styles.socialIcon} />
+          </a>
+        </div>
+      </div>
     </nav>
   )
 }
