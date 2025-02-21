@@ -3,7 +3,7 @@ import profileImage from "../../assets/img/cemalovic-milos-portfolio-img-1.jpg"
 import cv from "../../assets/img/CV_MilosCemalovic.pdf"
 import styles from "./Navigation.module.scss"
 import { FiDownload, FiGithub, FiLinkedin } from "react-icons/fi"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 interface NavigationItem {
   id: string
@@ -20,6 +20,26 @@ const Navigation = () => {
     { id: "about", label: "About" },
     { id: "contact", label: "Contact" },
   ]
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = NAV_ITEMS.map((item) => document.getElementById(item.id))
+
+      const scrollPosition = window.scrollY + 100
+
+      for (const section of sections) {
+        if (
+          section &&
+          section.offsetTop <= scrollPosition &&
+          section.offsetTop + section.offsetHeight > scrollPosition
+        ) {
+          setActiveSection(section.id)
+        }
+      }
+    }
+
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   return (
     <nav className={styles.navigation}>
