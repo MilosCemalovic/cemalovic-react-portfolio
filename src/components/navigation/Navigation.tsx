@@ -23,11 +23,11 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = NAV_ITEMS.map((item) => document.getElementById(item.id))
-
       const scrollPosition = window.scrollY + 100
 
-      for (const section of sections) {
+      NAV_ITEMS.forEach((item) => {
+        const section = document.getElementById(item.id)
+
         if (
           section &&
           section.offsetTop <= scrollPosition &&
@@ -35,7 +35,7 @@ const Navigation = () => {
         ) {
           setActiveSection(section.id)
         }
-      }
+      })
     }
 
     window.addEventListener("scroll", handleScroll)
