@@ -27,23 +27,6 @@
 
 .navItem {
   margin: 1.5rem 0;
-  position: relative;
-
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -0.5rem;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #fe4335;
-    transition: width 0.3s ease;
-  }
-
-  &:hover::after {
-    width: 30%;
-  }
 }
 
 .active {
@@ -64,9 +47,26 @@
   text-decoration: none;
   cursor: pointer;
   transition: color 0.3s ease;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fe4335;
+    transition: width 0.3s ease;
+  }
 
   &:hover {
     color: #fe4335;
+
+    &::after {
+      width: 100%;
+    }
   }
 }
 
