@@ -1,5 +1,5 @@
-import Hero from "./components/hero/Hero"
-import Navigation from "./components/navigation/Navigation"
+import Hero from "./components/Hero/Hero"
+import Navigation from "./components/Navigation/Navigation"
 
 const App = () => {
   return (
