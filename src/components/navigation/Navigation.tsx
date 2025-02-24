@@ -26,6 +26,7 @@ const Navigation = () => {
       const sections = NAV_ITEMS.map((item) => document.getElementById(item.id))
 
       const scrollPosition = window.scrollY + 100
+
       for (const section of sections) {
         if (
           section &&
