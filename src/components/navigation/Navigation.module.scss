@@ -29,16 +29,6 @@
   margin: 1.5rem 0;
 }
 
-.active {
-  .navLink {
-    color: inherit;
-  }
-
-  &::after {
-    width: 100%;
-  }
-}
-
 .navLink {
   font-family: "Poppins", sans-serif;
   font-size: 1.4rem;
@@ -46,8 +36,18 @@
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease; // Added for hover effect
   position: relative;
+
+  &.active {
+    .navLink {
+      color: #fe4335;
+    }
+
+    &::after {
+      width: 100%;
+    }
+  }
 
   &::after {
     content: "";
