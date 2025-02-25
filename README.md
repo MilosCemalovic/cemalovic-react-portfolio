@@ -1,6 +1,6 @@
 # cemalovic-react-portfolio
 
-WORK IN PROGRESS!
+## WORK IN PROGRESS!
 
 This is web portfolio for Milos Cemalovic using React principles
 
