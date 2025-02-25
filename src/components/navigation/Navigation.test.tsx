@@ -7,4 +7,9 @@ describe("Navigation", () => {
     render(<Navigation />)
     expect(screen.getByTestId("navigation")).toBeInTheDocument()
   })
+  it("should render the navigation links", () => {
+    render(<Navigation />)
+    expect(screen.getByTestId("cv-link")).toBeInTheDocument()
+    expect(screen.getByTestId("social-links")).toBeInTheDocument()
+  })
 })
