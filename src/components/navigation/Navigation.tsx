@@ -45,7 +45,7 @@ const Navigation = () => {
   }, [])
 
   return (
-    <nav className={styles.navigation}>
+    <nav className={styles.navigation} data-testid="navigation">
       <div className={styles.profile}>
         <img
           src={profileImage}
@@ -77,12 +77,12 @@ const Navigation = () => {
       </ul>
 
       <div className={styles.socialWrapper}>
-        <a href={cv} className={styles.cvButton} download>
+        <a href={cv} className={styles.cvButton} data-testid="cv-link" download>
           <FiDownload className={styles.icon} />
           Download CV
         </a>
 
-        <div className={styles.socialLinks}>
+        <div className={styles.socialLinks} data-testid="social-links">
           <a href="https://github.com/MilosCemalovic" target="_blank">
             <FiGithub className={styles.socialIcon} />
           </a>
