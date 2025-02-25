@@ -10,7 +10,8 @@
   background-position: start;
   display: flex;
   align-items: center;
-  padding-left: 35rem; // Offset for fixed navigation
+  justify-content: center;
+  padding-left: 25vw; // Match sidebar width
 }
 
 .content {
