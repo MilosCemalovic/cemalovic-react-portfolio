@@ -44,6 +44,8 @@ const Navigation = () => {
     // eslint-disable-next-line
   }, [])
 
+  console.log("Active Section:", activeSection) // Track state changes in the console
+
   return (
     <nav className={styles.navigation} data-testid="navigation">
       <div className={styles.profile}>
