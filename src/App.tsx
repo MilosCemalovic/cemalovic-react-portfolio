@@ -1,3 +1,4 @@
+import Experience from "./components/Experience/Experience"
 import Hero from "./components/Hero/Hero"
 import Navigation from "./components/Navigation/Navigation"
 
@@ -5,7 +6,11 @@ const App = () => {
   return (
     <>
       <Navigation />
-      <Hero />
+
+      <main>
+        <Hero />
+        <Experience />
+      </main>
     </>
   )
 }
