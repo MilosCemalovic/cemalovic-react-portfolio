@@ -63,6 +63,8 @@ const Navigation = () => {
             className={`${styles.navItem} ${
               activeSection === item.id ? styles.active : ""
             }`}
+            data-testid={`navitem-${item.id}`}
+            data-active={activeSection === item.id}
           >
             <Link
               className={styles.navLink}
@@ -71,6 +73,7 @@ const Navigation = () => {
               smooth={true}
               offset={-100}
               duration={500}
+              data-testid={`nav-${item.id}`}
             >
               {item.label}
             </Link>
