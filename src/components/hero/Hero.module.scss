@@ -1,5 +1,10 @@
 .hero {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 25vw;
   background: linear-gradient(
       to right,
       rgba(102, 102, 102, 0.7),
@@ -8,31 +13,42 @@
     url("../../assets/img/cemalovic-milos-portfolio-img-2.jpg");
   background-size: cover;
   background-position: start;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 25vw; // Match sidebar width
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    padding: 0 2rem;
+  }
 }
 
 .content {
-  max-width: 60rem;
-}
-
-.title {
-  font-family: "Poppins", sans-serif;
-  color: white;
-  line-height: 1.2;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .greeting {
-  display: block;
-  text-align: center;
   font-size: 6rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+
+  @media (max-width: 992px) {
+    font-size: 4rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 3rem;
+  }
 }
 
 .subtitle {
-  display: block;
   font-size: 3rem;
+  color: white;
   font-weight: 300;
+
+  @media (max-width: 992px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 1.5rem;
+  }
 }
