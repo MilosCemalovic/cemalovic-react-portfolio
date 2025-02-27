@@ -51,6 +51,10 @@ const Navigation = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
+  const handleLinkClick = () => {
+    setIsMenuOpen(false) // Close the menu when a link is clicked
+  }
+
   return (
     <nav className={styles.navigation} data-testid="navigation">
       {/* Mobile Header */}
@@ -105,6 +109,7 @@ const Navigation = () => {
                 smooth={true}
                 offset={-100}
                 duration={500}
+                onClick={handleLinkClick} // Close menu on link click
                 data-testid={`nav-${item.id}`}
               >
                 {item.label}
