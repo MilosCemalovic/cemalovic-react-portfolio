@@ -137,8 +137,8 @@ export const EXPERIENCE: ExperienceItem[] = [
       "🌟 Created Beogradska Disko Žurka - Belgrade Disco Fever with 1000+ attendees",
     ],
     skills: [
-      "Mentoring",
-      "Public relations",
+      "Teaching",
+      "Public Relations",
       "People Management",
       "Soft Skills",
       "Event Production",
