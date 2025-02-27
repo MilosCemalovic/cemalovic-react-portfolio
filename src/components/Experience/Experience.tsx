@@ -8,7 +8,7 @@ const Experience = () => {
       className={styles.experience}
       data-testid="experience-section"
     >
-      <h2 className={styles.heading} data-testid="experience-heading">
+      <h2 className="heading" data-testid="experience-heading">
         Professional Experience
       </h2>
 
