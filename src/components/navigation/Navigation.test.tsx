@@ -1,27 +1,32 @@
 import { describe, expect, it, vi } from "vitest"
 import { act, render, screen, waitFor } from "@testing-library/react"
+import userEvent from "@testing-library/user-event"
 import Navigation from "./Navigation"
 import TestEnvironment from "../../test/TestEnvironment"
+import styles from "./Navigation.module.scss"
 
 window.HTMLElement.prototype.scrollIntoView = vi.fn()
 
 describe("Navigation", () => {
-  it("should render the navigation component", () => {
+  beforeEach(() => {
     render(<Navigation />)
+  })
+
+  it("should render the navigation component", () => {
     expect(screen.getByTestId("navigation")).toBeInTheDocument()
   })
 
   it("should render the navigation links", () => {
-    render(<Navigation />)
     expect(screen.getByTestId("cv-link")).toBeInTheDocument()
     expect(screen.getByTestId("social-links")).toBeInTheDocument()
   })
 
   it("has a working CV download", () => {
-    render(<Navigation />)
     expect(screen.getByText("Download CV")).toHaveAttribute("download")
   })
+})
 
+describe("Navigation - Active Section on Scroll", () => {
   it("updates the active section on scroll", async () => {
     render(<TestEnvironment />)
 
@@ -56,5 +61,60 @@ describe("Navigation", () => {
       },
       { timeout: 1000 }
     )
+  })
+})
+
+describe("Navigation - Hamburger Menu", () => {
+  beforeEach(() => {
+    // Set viewport width to simulate a smaller screen
+    window.innerWidth = 500
+
+    render(<Navigation />)
+  })
+
+  it("should render the hamburger menu", () => {
+    const menuButton = screen.getByTestId("menu-button")
+    expect(menuButton).toBeInTheDocument()
+  })
+
+  it("should hide the navigation links by default", () => {
+    const navWrapper = screen.getByTestId("nav-wrapper")
+    expect(navWrapper).not.toHaveClass(styles.open)
+  })
+
+  it("should toggle the navigation links on button click", async () => {
+    // For version v14 or above (currently using), we are use async/await with userEvent.setup()
+    // If the version is v13 or below, use userEvent.click() synchronously, without async/await
+    const user = userEvent.setup()
+
+    const menuButton = screen.getByTestId("menu-button")
+    const navWrapper = screen.getByTestId("nav-wrapper")
+
+    // Menu should be closed initially
+    expect(navWrapper).not.toHaveClass(styles.open)
+
+    // Click the menu button to open the menu
+    await user.click(menuButton)
+    expect(navWrapper).toHaveClass(styles.open)
+
+    // Click the menu button again to close the menu
+    await user.click(menuButton)
+    expect(navWrapper).not.toHaveClass(styles.open)
+  })
+
+  it("should close the navigation links on link click", async () => {
+    const user = userEvent.setup()
+
+    const menuButton = screen.getByTestId("menu-button")
+    const navWrapper = screen.getByTestId("nav-wrapper")
+    const navExperience = screen.getByTestId("nav-experience")
+
+    // Open the menu
+    await user.click(menuButton)
+    expect(navWrapper).toHaveClass(styles.open)
+
+    // Menu should be closed after experience link click
+    await user.click(navExperience)
+    expect(navWrapper).not.toHaveClass(styles.open)
   })
 })
