@@ -190,6 +190,10 @@
   &:hover {
     transform: translateY(-2px);
   }
+
+  @media (max-width: 940px) {
+    padding: 1rem;
+  }
 }
 
 .icon {
