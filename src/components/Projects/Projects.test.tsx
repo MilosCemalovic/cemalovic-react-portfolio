@@ -42,12 +42,10 @@ describe("Projects", () => {
         expect(liveLink).toHaveAttribute("href", project.liveLink)
       }
 
-      // Check for GitHub link (if available)
-      if (project.githubLink) {
-        const githubLink = screen.getByTestId(`github-link-${project.title}`)
-        expect(githubLink).toBeInTheDocument()
-        expect(githubLink).toHaveAttribute("href", project.githubLink)
-      }
+      // Check for GitHub link
+      const githubLink = screen.getByTestId(`github-link-${project.title}`)
+      expect(githubLink).toBeInTheDocument()
+      expect(githubLink).toHaveAttribute("href", project.githubLink)
     })
   })
 })
