@@ -26,15 +26,6 @@ const Contact = () => {
       {isSmallScreen && (
         <div className={styles.social} data-testid="social-links">
           <a
-            href="https://www.linkedin.com/in/milos-cemalovic"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.socialLink}
-            data-testid="linkedin-link"
-          >
-            <FiLinkedin className={styles.socialIcon} />
-          </a>
-          <a
             href="https://github.com/MilosCemalovic"
             target="_blank"
             rel="noopener noreferrer"
@@ -42,6 +33,16 @@ const Contact = () => {
             data-testid="github-link"
           >
             <FiGithub className={styles.socialIcon} />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/milos-cemalovic"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.socialLink}
+            data-testid="linkedin-link"
+          >
+            <FiLinkedin className={styles.socialIcon} />
           </a>
         </div>
       )}

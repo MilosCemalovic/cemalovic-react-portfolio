@@ -9,6 +9,11 @@
   @media (max-width: 768px) {
     padding: 3rem 2rem;
   }
+
+  @media (max-width: 425px) {
+    gap: 1rem;
+    padding: 2rem;
+  }
 }
 
 .footerLink {
@@ -27,7 +32,15 @@
     text-align: center;
 
     @media (max-width: 768px) {
-      font-size: 2rem;
+      font-size: 2.2rem;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 320px) {
+      font-size: 1rem;
     }
   }
 
@@ -39,7 +52,15 @@
 
 .footerText {
   color: #f9f9f9;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+
+  @media (max-width: 425px) {
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 0.9rem;
+  }
 }
 
 .social {
@@ -54,5 +75,9 @@
   .socialIcon {
     font-size: 2.4rem;
     color: #e8e5e5;
+
+    @media (max-width: 425px) {
+      font-size: 1.5rem;
+    }
   }
 }
