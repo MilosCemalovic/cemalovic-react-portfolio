@@ -16,7 +16,7 @@ describe("Projects", () => {
     expect(screen.getByText("Projects")).toBeInTheDocument()
   })
 
-  it("should render the heading", () => {
+  it("should render the Project items", () => {
     const projectItems = screen.getAllByTestId("project-item")
     expect(projectItems).toHaveLength(PROJECTS.length)
   })
