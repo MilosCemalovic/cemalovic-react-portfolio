@@ -3,12 +3,21 @@ import { act, render, screen, waitFor } from "@testing-library/react"
 import userEvent from "@testing-library/user-event"
 import Navigation from "./Navigation"
 import TestEnvironment from "../../test/TestEnvironment"
+import * as useMediaQuery from "../../hooks/useMediaQuery"
 import styles from "./Navigation.module.scss"
 
+// Mock the useMediaQuery hook
+vi.mock("../../hooks/useMediaQuery", () => ({
+  default: vi.fn(),
+}))
+
+// Mock scrollIntoView
 window.HTMLElement.prototype.scrollIntoView = vi.fn()
 
 describe("Navigation", () => {
   beforeEach(() => {
+    ;(useMediaQuery.default as jest.Mock).mockReturnValue(false)
+
     render(<Navigation />)
   })
 
@@ -68,6 +77,7 @@ describe("Navigation - Hamburger Menu", () => {
   beforeEach(() => {
     // Set viewport width to simulate a smaller screen
     window.innerWidth = 500
+    ;(useMediaQuery.default as jest.Mock).mockReturnValue(true)
 
     render(<Navigation />)
   })

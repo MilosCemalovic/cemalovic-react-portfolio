@@ -9,7 +9,7 @@ import Contact from "./components/Contact/Contact"
 
 const App = () => {
   return (
-    <>
+    <div data-testid="app">
       <Navigation />
 
       <main>
@@ -22,7 +22,7 @@ const App = () => {
       </main>
 
       <Contact />
-    </>
+    </div>
   )
 }
 

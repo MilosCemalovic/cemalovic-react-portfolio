@@ -45,8 +45,6 @@ const Navigation = () => {
     // eslint-disable-next-line
   }, [])
 
-  console.log("Active Section:", activeSection) // Track state changes in the console
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
