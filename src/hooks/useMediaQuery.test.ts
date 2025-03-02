@@ -46,7 +46,7 @@ describe("useMediaQuery Hook", () => {
       media: "(max-width: 768px)",
       onchange: null,
       addEventListener: (
-        event: string,
+        _: string,
         listener: (event: MediaQueryListEvent) => void
       ) => {
         listeners.push(listener)
