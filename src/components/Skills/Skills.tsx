@@ -7,17 +7,17 @@ const Skills = () => {
     <section id="skills" className={styles.skills} data-testid="skills-section">
       <h2 className="heading">Technical Skills</h2>
 
-      <div className={styles.grid}>
+      <div className="iconBoxWrapper">
         {SKILLS.map((skill) => (
           <div
             key={skill.name}
-            className={styles.skill}
+            className="iconWrapper"
             data-testid="skill-item"
           >
             <svg className={styles.icon} data-testid={`icon-${skill.iconId}`}>
               <use xlinkHref={`${spriteSVG}#${skill.iconId}`} />
             </svg>
-            <span className={styles.name}>{skill.name}</span>
+            <span className="iconName">{skill.name}</span>
           </div>
         ))}
       </div>
