@@ -118,7 +118,7 @@ const Navigation = () => {
                 to={item.id}
                 spy={true}
                 smooth={true}
-                offset={-20}
+                offset={-50}
                 duration={400}
                 onClick={handleLinkClick} // Close menu on link click
                 data-testid={`nav-${item.id}`}
