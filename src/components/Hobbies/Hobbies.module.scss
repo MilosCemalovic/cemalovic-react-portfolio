@@ -1,0 +1,13 @@
+.hobbies {
+  padding: 4rem 0 4rem 25vw; // Account for the sidebar
+  background-color: #f8f9fa;
+
+  @media (max-width: 768px) {
+    padding: 2rem 0;
+  }
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
