@@ -24,7 +24,7 @@ export const ABOUT: AboutItem[] = [
       "As a versatile developer, I delved into responsive web design, SEO, and PHP. I honed my skills in OOP, BEM, SEO, Bootstrap, HTML5, CSS3, SASS, and JavaScript, and gained experience with PHP and MySQL.",
   },
   {
-    icon: "💃",
+    icon: "🕺",
     title: "2013 - Present",
     content:
       "Founder of Naturally Dance, where I taught dance, organized international events, and managed marketing activities. This experience helped me develop strong organizational and leadership skills.",
