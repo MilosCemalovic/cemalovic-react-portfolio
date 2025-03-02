@@ -118,12 +118,8 @@ const Navigation = () => {
                 to={item.id}
                 spy={true}
                 smooth={true}
-                offset={-200}
+                offset={-1}
                 duration={400}
-                onSetActive={(to) => {
-                  console.log(`Active section: ${to}`) // Debugging
-                  setActiveSection(to)
-                }}
                 onClick={handleLinkClick} // Close menu on link click
                 data-testid={`nav-${item.id}`}
               >
