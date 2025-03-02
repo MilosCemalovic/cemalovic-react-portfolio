@@ -36,37 +36,75 @@ describe("Navigation", () => {
 })
 
 describe("Navigation - Active Section on Scroll", () => {
-  it("updates the active section on scroll", async () => {
-    render(<TestEnvironment />)
+  it("marks 'contact' as active when scrolled to the bottom", async () => {
+    // Render the Navigation component with mocked sections
+    render(
+      <TestEnvironment>
+        <section
+          id="experience"
+          data-testid="experience-section"
+          style={{ height: "500px" }}
+        >
+          Experience Section
+        </section>
+        <section
+          id="skills"
+          data-testid="skills-section"
+          style={{ height: "500px" }}
+        >
+          Skills Section
+        </section>
+        <section
+          id="projects"
+          data-testid="projects-section"
+          style={{ height: "500px" }}
+        >
+          Projects Section
+        </section>
+        <section
+          id="about"
+          data-testid="about-section"
+          style={{ height: "500px" }}
+        >
+          About Section
+        </section>
+        <section
+          id="contact"
+          data-testid="contact-section"
+          style={{ height: "500px" }}
+        >
+          Contact Section
+        </section>
+      </TestEnvironment>
+    )
 
-    const experienceLink = screen.getByTestId("nav-experience")
-    const experienceSection = screen.getByTestId("experience-section")
+    const contactLink = screen.getByTestId("nav-contact")
+    const contactSection = screen.getByTestId("contact-section")
 
     // Mock DOM measurements
-    Object.defineProperties(experienceSection, {
-      offsetTop: { value: 1000 },
+    Object.defineProperties(contactSection, {
+      offsetTop: { value: 2000 },
       offsetHeight: { value: 500 },
     })
 
     // 1. Verify initial state
-    expect(experienceLink.parentElement).not.toHaveAttribute(
-      "data-active",
-      "true"
-    )
+    expect(contactLink.parentElement).not.toHaveAttribute("data-active", "true")
 
-    // 2. Simulate scroll using direct position update
+    // 2. Simulate scroll to the bottom of the page
     act(() => {
-      window.scrollY = 900
+      window.scrollY = 2000
+      window.innerHeight = 1000
+      Object.defineProperty(document.documentElement, "scrollHeight", {
+        value: 3000,
+        configurable: true,
+      })
       window.dispatchEvent(new Event("scroll"))
     })
 
     // 3. Wait for state propagation
     await waitFor(
       () => {
-        expect(experienceLink.parentElement).toHaveAttribute(
-          "data-active",
-          "true"
-        )
+        expect(contactLink.parentElement).toHaveAttribute("data-active", "true")
       },
       { timeout: 1000 }
     )
@@ -93,8 +131,6 @@ describe("Navigation - Hamburger Menu", () => {
   })
 
   it("should toggle the navigation links on button click", async () => {
-    // For version v14 or above (currently using), we are use async/await with userEvent.setup()
-    // If the version is v13 or below, use userEvent.click() synchronously, without async/await
     const user = userEvent.setup()
 
     const menuButton = screen.getByTestId("menu-button")

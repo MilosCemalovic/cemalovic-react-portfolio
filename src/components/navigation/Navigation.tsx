@@ -1,49 +1,62 @@
-import { useEffect, useState } from "react"
+import { useState, useMemo, useEffect } from "react"
 import { Link } from "react-scroll"
 import { FiDownload, FiGithub, FiLinkedin, FiMenu, FiX } from "react-icons/fi"
 import profileImage from "../../assets/img/cemalovic-milos-portfolio-img-1.jpg"
 import cv from "../../assets/img/CV_MilosCemalovic.pdf"
 import styles from "./Navigation.module.scss"
 
-interface NavigationItem {
-  id: string
-  label: string
-}
-
 const Navigation = () => {
   const [activeSection, setActiveSection] = useState("top")
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  const NAV_ITEMS: NavigationItem[] = [
-    { id: "experience", label: "Experience" },
-    { id: "skills", label: "Skills" },
-    { id: "projects", label: "Projects" },
-    { id: "about", label: "About" },
-    { id: "contact", label: "Contact" },
-  ]
+  // NAV_ITEMS is wrapped in useMemo to prevent unnecessary re-renders
+  const NAV_ITEMS = useMemo(
+    () => [
+      { id: "experience", label: "Experience" },
+      { id: "skills", label: "Skills" },
+      { id: "projects", label: "Projects" },
+      { id: "about", label: "About" },
+      { id: "contact", label: "Contact" },
+    ],
+    []
+  )
 
+  // Custom scroll detection logic
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 100
+      const scrollPosition = window.scrollY + window.innerHeight
+      const pageHeight = document.documentElement.scrollHeight
 
-      NAV_ITEMS.forEach((item) => {
-        const section = document.getElementById(item.id)
+      // Check if the user has scrolled to the bottom of the page
+      if (scrollPosition >= pageHeight - 50) {
+        // 50px buffer for edge cases
+        setActiveSection("contact")
+      } else {
+        // Find the section that is currently in view
+        let currentSection = "top"
+        for (const item of NAV_ITEMS) {
+          const section = document.getElementById(item.id)
+          if (section) {
+            const sectionTop = section.offsetTop
+            const sectionBottom = sectionTop + section.offsetHeight
 
-        if (
-          section &&
-          section.offsetTop <= scrollPosition &&
-          section.offsetTop + section.offsetHeight > scrollPosition
-        ) {
-          setActiveSection(section.id)
+            if (
+              scrollPosition >= sectionTop &&
+              scrollPosition < sectionBottom
+            ) {
+              currentSection = item.id
+              break
+            }
+          }
         }
-      })
+        setActiveSection(currentSection)
+      }
     }
 
     window.addEventListener("scroll", handleScroll)
 
     return () => window.removeEventListener("scroll", handleScroll)
-    // eslint-disable-next-line
-  }, [])
+  }, [NAV_ITEMS])
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -105,8 +118,12 @@ const Navigation = () => {
                 to={item.id}
                 spy={true}
                 smooth={true}
-                offset={-100}
-                duration={500}
+                offset={-200}
+                duration={400}
+                onSetActive={(to) => {
+                  console.log(`Active section: ${to}`) // Debugging
+                  setActiveSection(to)
+                }}
                 onClick={handleLinkClick} // Close menu on link click
                 data-testid={`nav-${item.id}`}
               >
@@ -129,12 +146,12 @@ const Navigation = () => {
           </a>
 
           <div className={styles.socialLinks} data-testid="social-links">
-            <a href="https://github.com/MilosCemalovic" target="_blank">
-              <FiGithub className={styles.socialIcon} />
-            </a>
-
             <a href="https://linkedin.com/in/milos-cemalovic" target="_blank">
               <FiLinkedin className={styles.socialIcon} />
+            </a>
+
+            <a href="https://github.com/MilosCemalovic" target="_blank">
+              <FiGithub className={styles.socialIcon} />
             </a>
           </div>
         </div>
