@@ -39,7 +39,15 @@
       font-size: 1.5rem;
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 325px) {
+      font-size: 1.4rem;
+    }
+
+    @media (max-width: 310px) {
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 270px) {
       font-size: 1rem;
     }
   }
