@@ -8,7 +8,7 @@ export interface Project {
   description: string
   image: string
   liveLink?: string
-  githubLink?: string
+  githubLink: string
 }
 
 export const PROJECTS: Project[] = [
