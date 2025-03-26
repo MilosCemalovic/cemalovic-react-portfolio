@@ -10,7 +10,7 @@ export const SKILLS: Skill[] = [
   { name: "Vite", iconId: "icon-vite" },
   { name: "Jest", iconId: "icon-jest" },
   { name: "Testing Library", iconId: "icon-testing-library" },
-  { name: "Redux", iconId: "icon-redux" },
+  { name: "Redux Toolkit", iconId: "icon-redux" },
   { name: "Angular", iconId: "icon-angular" },
   { name: "Transloco i18n", iconId: "icon-transloco" },
   { name: "Angular Material", iconId: "icon-material" },
