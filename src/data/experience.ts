@@ -10,8 +10,8 @@ export interface ExperienceItem {
 export const EXPERIENCE: ExperienceItem[] = [
   {
     year: "2022 - Present",
-    title: "Applications Consultant",
-    company: "EY",
+    title: "React developer",
+    company: "EY Consulting",
     description:
       "Working as a React developer, I've been a member of multiple teams involved in building complex IFA (Independent Financial Adviser) web application for buying insurance for a UK based banking client.",
     details: [
@@ -43,7 +43,7 @@ export const EXPERIENCE: ExperienceItem[] = [
   },
   {
     year: "2020 - 2021",
-    title: "Junior Front-End Developer",
+    title: "Frontend Developer",
     company: "Intelligent Betting Software",
     description:
       "As a Junior Angular developer, I’ve successfully deployed an in-house platform creating dynamic, responsive, pixel perfect and localized web application.",
@@ -117,7 +117,7 @@ export const EXPERIENCE: ExperienceItem[] = [
   {
     year: "2019",
     title: "Web Design intern",
-    company: "Web Design Agency Studio 77",
+    company: "Studio 77",
     description:
       "During my internship at a specialized web design company, I gained valuable insights into the world of web development and search engine optimization. I learned the intricacies of SEO - how to optimize content and improve rankings on Google.",
     details: ["HTML5", "CSS3", "SASS", "SEO"],
