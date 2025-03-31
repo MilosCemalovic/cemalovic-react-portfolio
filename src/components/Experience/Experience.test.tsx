@@ -40,24 +40,4 @@ describe("Experience", () => {
     const skills = screen.getByText("Redux Toolkit")
     expect(skills).toBeInTheDocument()
   })
-
-  it("should display website link for Naturally Dance", () => {
-    const link = screen.getByRole("link", { name: "🌐 About" })
-    expect(link).toHaveAttribute(
-      "href",
-      "https://naturally-dance-org.netlify.app/"
-    )
-    expect(link).toHaveAttribute("target", "_blank")
-  })
-
-  it("should display emoji bullet points for Naturally Dance", () => {
-    const emojiItems = screen
-      .getAllByRole("listitem")
-      .filter((item) => item.textContent?.match(/^🎶|🌎|📢|🎧|🌟/))
-    expect(emojiItems.length).toBeGreaterThan(0)
-  })
-
-  it("shows disco fever achievement", () => {
-    expect(screen.getByText(/Belgrade Disco Fever/)).toBeInTheDocument()
-  })
 })

@@ -24,19 +24,7 @@ const Experience = () => {
             <div className={styles.content}>
               <h3 className={styles.title}>
                 {item.title}{" "}
-                <span className={styles.company}>
-                  @ {item.company}{" "}
-                  {item.company === "Naturally Dance" && (
-                    <a
-                      href="https://naturally-dance-org.netlify.app/"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className={styles.websiteLink}
-                    >
-                      🌐 About
-                    </a>
-                  )}
-                </span>
+                <span className={styles.company}>@ {item.company}</span>
               </h3>
 
               {item.skills && (

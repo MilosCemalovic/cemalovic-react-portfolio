@@ -123,29 +123,4 @@ export const EXPERIENCE: ExperienceItem[] = [
     details: ["HTML5", "CSS3", "SASS", "SEO"],
     skills: ["SEO", "SASS", "HTML5", "CSS3"],
   },
-  {
-    year: "2013 - Present",
-    title: "Founder - Owner",
-    company: "Naturally Dance",
-    description:
-      "Dance teacher / International and local event organization / Public relations / Marketing and advertising / Social media management",
-    details: [
-      "🎶 Taught 100+ students across 10+ dance styles",
-      "📢 Generated 500K+ social media impressions through viral campaigns",
-      "🎧 Curated playlists for 500+ dance events",
-      "🌎 Organized dance events with 200+ attendees",
-      "🌟 Created Beogradska Disko Žurka - Belgrade Disco Fever with 1000+ attendees",
-    ],
-    skills: [
-      "Teaching",
-      "Public Relations",
-      "People Management",
-      "Soft Skills",
-      "Event Production",
-      "Brand Strategy",
-      "Community Building",
-      "Organizational Skills",
-      "DJing",
-    ],
-  },
 ]
