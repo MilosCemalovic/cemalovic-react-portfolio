@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1740957239725" clover="3.2.0">
-  <project timestamp="1740957239725" name="All files">
-    <metrics statements="666" coveredstatements="649" conditionals="43" coveredconditionals="42" methods="16" coveredmethods="16" elements="725" coveredelements="707" complexity="0" loc="666" ncloc="666" packages="12" files="17" classes="17"/>
+<coverage generated="1743530226915" clover="3.2.0">
+  <project timestamp="1743530226915" name="All files">
+    <metrics statements="592" coveredstatements="575" conditionals="40" coveredconditionals="39" methods="15" coveredmethods="15" elements="647" coveredelements="629" complexity="0" loc="592" ncloc="592" packages="11" files="15" classes="15"/>
     <package name="src">
-      <metrics statements="41" coveredstatements="41" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <metrics statements="39" coveredstatements="39" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
       <file name="App.tsx" path="C:\Users\Milos\cemalovic-react-portfolio\src\App.tsx">
-        <metrics statements="24" coveredstatements="24" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <metrics statements="22" coveredstatements="22" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -13,23 +13,21 @@
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="10" count="4" type="stmt"/>
         <line num="11" count="4" type="stmt"/>
         <line num="12" count="4" type="stmt"/>
-        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
         <line num="15" count="4" type="stmt"/>
         <line num="16" count="4" type="stmt"/>
         <line num="17" count="4" type="stmt"/>
         <line num="18" count="4" type="stmt"/>
         <line num="19" count="4" type="stmt"/>
         <line num="20" count="4" type="stmt"/>
-        <line num="21" count="4" type="stmt"/>
         <line num="22" count="4" type="stmt"/>
-        <line num="24" count="4" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
         <line num="25" count="4" type="stmt"/>
-        <line num="27" count="4" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
       </file>
       <file name="main.tsx" path="C:\Users\Milos\cemalovic-react-portfolio\src\main.tsx">
         <metrics statements="17" coveredstatements="17" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
@@ -64,11 +62,11 @@
         <line num="7" count="8" type="stmt"/>
         <line num="9" count="8" type="stmt"/>
         <line num="10" count="8" type="cond" truecount="1" falsecount="0"/>
-        <line num="11" count="40" type="stmt"/>
-        <line num="12" count="40" type="stmt"/>
-        <line num="14" count="40" type="stmt"/>
-        <line num="16" count="40" type="stmt"/>
-        <line num="17" count="40" type="stmt"/>
+        <line num="11" count="32" type="stmt"/>
+        <line num="12" count="32" type="stmt"/>
+        <line num="14" count="32" type="stmt"/>
+        <line num="16" count="32" type="stmt"/>
+        <line num="17" count="32" type="stmt"/>
         <line num="18" count="8" type="stmt"/>
         <line num="19" count="8" type="stmt"/>
         <line num="20" count="8" type="stmt"/>
@@ -124,62 +122,52 @@
       </file>
     </package>
     <package name="src.components.Experience">
-      <metrics statements="53" coveredstatements="53" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
+      <metrics statements="43" coveredstatements="43" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <file name="Experience.tsx" path="C:\Users\Milos\cemalovic-react-portfolio\src\components\Experience\Experience.tsx">
-        <metrics statements="53" coveredstatements="53" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <metrics statements="43" coveredstatements="43" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="5" count="13" type="stmt"/>
-        <line num="6" count="13" type="stmt"/>
-        <line num="7" count="13" type="stmt"/>
-        <line num="8" count="13" type="stmt"/>
-        <line num="9" count="13" type="stmt"/>
-        <line num="11" count="13" type="stmt"/>
-        <line num="13" count="13" type="stmt"/>
-        <line num="15" count="13" type="stmt"/>
-        <line num="16" count="13" type="cond" truecount="1" falsecount="0"/>
-        <line num="17" count="65" type="stmt"/>
-        <line num="18" count="65" type="stmt"/>
-        <line num="19" count="65" type="stmt"/>
-        <line num="20" count="65" type="stmt"/>
-        <line num="22" count="65" type="stmt"/>
-        <line num="24" count="65" type="stmt"/>
-        <line num="25" count="65" type="stmt"/>
-        <line num="26" count="65" type="stmt"/>
-        <line num="27" count="65" type="stmt"/>
-        <line num="28" count="65" type="stmt"/>
-        <line num="29" count="65" type="cond" truecount="1" falsecount="0"/>
-        <line num="30" count="13" type="stmt"/>
-        <line num="31" count="13" type="stmt"/>
-        <line num="32" count="13" type="stmt"/>
-        <line num="33" count="13" type="stmt"/>
-        <line num="34" count="13" type="stmt"/>
-        <line num="35" count="13" type="stmt"/>
-        <line num="37" count="13" type="stmt"/>
-        <line num="39" count="65" type="stmt"/>
-        <line num="40" count="65" type="stmt"/>
-        <line num="42" count="65" type="stmt"/>
-        <line num="43" count="65" type="stmt"/>
-        <line num="44" count="65" type="cond" truecount="1" falsecount="0"/>
-        <line num="45" count="611" type="stmt"/>
-        <line num="46" count="611" type="stmt"/>
-        <line num="47" count="611" type="stmt"/>
-        <line num="48" count="65" type="stmt"/>
-        <line num="49" count="65" type="stmt"/>
-        <line num="52" count="65" type="stmt"/>
-        <line num="54" count="65" type="stmt"/>
-        <line num="55" count="65" type="cond" truecount="1" falsecount="0"/>
-        <line num="56" count="624" type="stmt"/>
-        <line num="57" count="65" type="stmt"/>
-        <line num="58" count="65" type="stmt"/>
-        <line num="59" count="65" type="stmt"/>
-        <line num="60" count="65" type="stmt"/>
-        <line num="61" count="13" type="stmt"/>
-        <line num="62" count="13" type="stmt"/>
-        <line num="63" count="13" type="stmt"/>
-        <line num="65" count="13" type="stmt"/>
-        <line num="67" count="1" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="7" count="10" type="stmt"/>
+        <line num="8" count="10" type="stmt"/>
+        <line num="9" count="10" type="stmt"/>
+        <line num="11" count="10" type="stmt"/>
+        <line num="13" count="10" type="stmt"/>
+        <line num="15" count="10" type="stmt"/>
+        <line num="16" count="10" type="cond" truecount="1" falsecount="0"/>
+        <line num="17" count="40" type="stmt"/>
+        <line num="18" count="40" type="stmt"/>
+        <line num="19" count="40" type="stmt"/>
+        <line num="20" count="40" type="stmt"/>
+        <line num="22" count="40" type="stmt"/>
+        <line num="24" count="40" type="stmt"/>
+        <line num="25" count="40" type="stmt"/>
+        <line num="26" count="40" type="stmt"/>
+        <line num="27" count="40" type="stmt"/>
+        <line num="28" count="40" type="stmt"/>
+        <line num="30" count="40" type="stmt"/>
+        <line num="31" count="40" type="stmt"/>
+        <line num="32" count="40" type="cond" truecount="1" falsecount="0"/>
+        <line num="33" count="380" type="stmt"/>
+        <line num="34" count="380" type="stmt"/>
+        <line num="35" count="380" type="stmt"/>
+        <line num="36" count="40" type="stmt"/>
+        <line num="37" count="40" type="stmt"/>
+        <line num="40" count="40" type="stmt"/>
+        <line num="42" count="40" type="stmt"/>
+        <line num="43" count="40" type="cond" truecount="1" falsecount="0"/>
+        <line num="44" count="430" type="stmt"/>
+        <line num="45" count="40" type="stmt"/>
+        <line num="46" count="40" type="stmt"/>
+        <line num="47" count="40" type="stmt"/>
+        <line num="48" count="40" type="stmt"/>
+        <line num="49" count="10" type="stmt"/>
+        <line num="50" count="10" type="stmt"/>
+        <line num="51" count="10" type="stmt"/>
+        <line num="53" count="10" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Hero">
@@ -218,35 +206,6 @@
         <line num="34" count="7" type="stmt"/>
         <line num="36" count="7" type="stmt"/>
         <line num="38" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.components.Hobbies">
-      <metrics statements="23" coveredstatements="23" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <file name="Hobbies.tsx" path="C:\Users\Milos\cemalovic-react-portfolio\src\components\Hobbies\Hobbies.tsx">
-        <metrics statements="23" coveredstatements="23" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="5" count="8" type="stmt"/>
-        <line num="6" count="8" type="stmt"/>
-        <line num="7" count="8" type="stmt"/>
-        <line num="8" count="8" type="stmt"/>
-        <line num="9" count="8" type="stmt"/>
-        <line num="11" count="8" type="stmt"/>
-        <line num="13" count="8" type="stmt"/>
-        <line num="14" count="8" type="cond" truecount="1" falsecount="0"/>
-        <line num="15" count="48" type="stmt"/>
-        <line num="16" count="48" type="stmt"/>
-        <line num="17" count="48" type="stmt"/>
-        <line num="18" count="48" type="stmt"/>
-        <line num="20" count="48" type="stmt"/>
-        <line num="21" count="48" type="stmt"/>
-        <line num="22" count="48" type="stmt"/>
-        <line num="23" count="8" type="stmt"/>
-        <line num="24" count="8" type="stmt"/>
-        <line num="25" count="8" type="stmt"/>
-        <line num="27" count="8" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Navigation">
@@ -465,9 +424,9 @@
       </file>
     </package>
     <package name="src.data">
-      <metrics statements="239" coveredstatements="239" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="200" coveredstatements="200" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="about.ts" path="C:\Users\Milos\cemalovic-react-portfolio\src\data\about.ts">
-        <metrics statements="32" coveredstatements="32" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="26" coveredstatements="26" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="7" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
@@ -494,15 +453,9 @@
         <line num="30" count="1" type="stmt"/>
         <line num="31" count="1" type="stmt"/>
         <line num="32" count="1" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
-        <line num="35" count="1" type="stmt"/>
-        <line num="36" count="1" type="stmt"/>
-        <line num="37" count="1" type="stmt"/>
-        <line num="38" count="1" type="stmt"/>
       </file>
       <file name="experience.ts" path="C:\Users\Milos\cemalovic-react-portfolio\src\data\experience.ts">
-        <metrics statements="142" coveredstatements="142" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="117" coveredstatements="117" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
@@ -620,42 +573,6 @@
         <line num="124" count="1" type="stmt"/>
         <line num="125" count="1" type="stmt"/>
         <line num="126" count="1" type="stmt"/>
-        <line num="127" count="1" type="stmt"/>
-        <line num="128" count="1" type="stmt"/>
-        <line num="129" count="1" type="stmt"/>
-        <line num="130" count="1" type="stmt"/>
-        <line num="131" count="1" type="stmt"/>
-        <line num="132" count="1" type="stmt"/>
-        <line num="133" count="1" type="stmt"/>
-        <line num="134" count="1" type="stmt"/>
-        <line num="135" count="1" type="stmt"/>
-        <line num="136" count="1" type="stmt"/>
-        <line num="137" count="1" type="stmt"/>
-        <line num="138" count="1" type="stmt"/>
-        <line num="139" count="1" type="stmt"/>
-        <line num="140" count="1" type="stmt"/>
-        <line num="141" count="1" type="stmt"/>
-        <line num="142" count="1" type="stmt"/>
-        <line num="143" count="1" type="stmt"/>
-        <line num="144" count="1" type="stmt"/>
-        <line num="145" count="1" type="stmt"/>
-        <line num="146" count="1" type="stmt"/>
-        <line num="147" count="1" type="stmt"/>
-        <line num="148" count="1" type="stmt"/>
-        <line num="149" count="1" type="stmt"/>
-        <line num="150" count="1" type="stmt"/>
-        <line num="151" count="1" type="stmt"/>
-      </file>
-      <file name="hobbies.ts" path="C:\Users\Milos\cemalovic-react-portfolio\src\data\hobbies.ts">
-        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
       </file>
       <file name="projects.ts" path="C:\Users\Milos\cemalovic-react-portfolio\src\data\projects.ts">
         <metrics statements="31" coveredstatements="31" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
