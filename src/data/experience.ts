@@ -10,18 +10,18 @@ export interface ExperienceItem {
 export const EXPERIENCE: ExperienceItem[] = [
   {
     year: "2022 - Present",
-    title: "React Developer",
+    title: "Frontend Developer",
     company: "EY Consulting",
     description:
       "Working as a React developer, I've been a member of multiple teams involved in building complex IFA (Independent Financial Adviser) web application for buying insurance for a UK based banking client.",
     details: [
       "React/TypeScript development",
-      "Redux state management",
+      "Redux Toolkit state management",
       "Jest/Testing Library",
       "Snapshots & unit testing",
       "CSS modules",
       "Jira & Confluence for project management",
-      "Storybook for component development",
+      "Storybook based on Material UI for component development",
       "Git & GitHub for version control",
       "Jenkins for CI/CD",
       "ESLint & Prettier for code quality",
@@ -54,7 +54,7 @@ export const EXPERIENCE: ExperienceItem[] = [
       "Angular Material & PrimeNG",
       "HTML5, CSS3, SASS",
       "DRY principle",
-      "Translocoi18n for localization",
+      "Transloco i18n for localization",
       "Git & Bitbucket for version control",
       "Redmine for project management",
       "ESLint & Prettier for code quality",
