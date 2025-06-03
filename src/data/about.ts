@@ -1,13 +1,14 @@
-export interface AboutItem {
+export interface AboutItem
+{
   icon: string
   title: string
   content: string
 }
 
-export const ABOUT: AboutItem[] = [
+export const ABOUT: AboutItem[]=[
   {
     icon: "🚀",
-    title: "2022 - Present",
+    title: "2022 - 2025",
     content:
       "As a React Developer, I’ve had the opportunity to work with several teams to build and maintain complex solutions for Independent Financial Advisors (IFA). My experience includes developing reusable UI components, styling them using CSS modules, and implementing Storybook components based on Material UI to ensure consistency and usability. I also focus on writing comprehensive unit tests with Jest and React Testing Library to ensure code reliability. Additionally, I have hands-on experience with microservices architecture and Jenkins pipelines, which allows for streamlined and efficient development workflows. Throughout my career, I’ve maintained excellent communication with cross-functional teams across various time zones, ensuring smooth collaboration and project success.",
   },
