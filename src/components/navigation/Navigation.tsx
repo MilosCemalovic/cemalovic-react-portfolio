@@ -88,6 +88,7 @@ const Navigation = () => {
         </button>
       </div>
 
+      {/* Navigation Wrapper */}
       <div
         className={`${styles.navWrapper} ${isMenuOpen ? styles.open : ""}`}
         data-testid="nav-wrapper"
@@ -101,6 +102,7 @@ const Navigation = () => {
           />
         </div>
 
+        {/* Navigation Links */}
         <ul className={styles.navList}>
           {NAV_ITEMS.map((item) => (
             <li
@@ -127,6 +129,7 @@ const Navigation = () => {
           ))}
         </ul>
 
+        {/* Social Links and CV */}
         <div className={styles.socialWrapper}>
           <a
             href={cv}

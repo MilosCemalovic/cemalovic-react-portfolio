@@ -135,7 +135,7 @@
 }
 
 .navLink {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.4rem;
   color: #666;
   text-transform: uppercase;
@@ -145,7 +145,7 @@
   position: relative;
 
   &::after {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     bottom: -0.5rem;
@@ -204,6 +204,10 @@
   display: flex;
   gap: 1.5rem;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    margin-bottom: 6rem;
+  }
 }
 
 .socialIcon {

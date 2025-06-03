@@ -1,4 +1,5 @@
-export interface ExperienceItem {
+export interface ExperienceItem
+{
   year: string
   title: string
   company: string
@@ -7,9 +8,9 @@ export interface ExperienceItem {
   skills?: string[]
 }
 
-export const EXPERIENCE: ExperienceItem[] = [
+export const EXPERIENCE: ExperienceItem[]=[
   {
-    year: "2022 - Present",
+    year: "2022 - 2025",
     title: "Frontend Developer",
     company: "EY Consulting",
     description:
@@ -17,11 +18,10 @@ export const EXPERIENCE: ExperienceItem[] = [
     details: [
       "React/TypeScript development",
       "Redux Toolkit state management",
-      "Jest/Testing Library",
-      "Snapshots & unit testing",
-      "CSS modules",
+      "Jest/RTL snapshots & unit testing",
+      "CSS modules for styling",
       "Jira & Confluence for project management",
-      "Storybook based on Material UI for component development",
+      "Storybook for component development",
       "Git & GitHub for version control",
       "Jenkins for CI/CD",
       "ESLint & Prettier for code quality",
@@ -49,15 +49,13 @@ export const EXPERIENCE: ExperienceItem[] = [
       "As a Junior Angular developer, I’ve successfully deployed an in-house platform creating dynamic, responsive, pixel perfect and localized web application.",
     details: [
       "Angular/TypeScript development",
+      "HTML5, CSS3, SASS for layout",
+      "Translocoi18n for localization",
       "REST API integration",
-      "RxJS Observables",
-      "Angular Material & PrimeNG",
-      "HTML5, CSS3, SASS",
-      "DRY principle",
-      "Transloco i18n for localization",
-      "Git & Bitbucket for version control",
       "Redmine for project management",
       "ESLint & Prettier for code quality",
+      "Git & Bitbucket for version control",
+      "Angular Material & PrimeNG for component development",
       "npm for package management",
     ],
     skills: [
@@ -116,7 +114,7 @@ export const EXPERIENCE: ExperienceItem[] = [
   },
   {
     year: "2019",
-    title: "Web Design Intern",
+    title: "Web Design intern",
     company: "Studio 77",
     description:
       "During my internship at a specialized web design company, I gained valuable insights into the world of web development and search engine optimization. I learned the intricacies of SEO - how to optimize content and improve rankings on Google.",

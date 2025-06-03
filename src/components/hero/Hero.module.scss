@@ -10,7 +10,7 @@
       rgba(102, 102, 102, 0.7),
       rgba(102, 102, 102, 0.7)
     ),
-    url("../../assets/img/cemalovic-milos-portfolio-img-2.jpg");
+    url('../../assets/img/cemalovic-milos-portfolio-img-2.jpg');
   background-size: cover;
   background-position: left;
   overflow: hidden;
@@ -50,5 +50,14 @@
 
   @media (max-width: 576px) {
     font-size: 1.5rem;
+  }
+}
+
+.buttonWrapper {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    margin-top: 20rem;
   }
 }
