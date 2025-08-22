@@ -22,7 +22,7 @@ This project was generated with Vite version ^6.1.0
 
 ## Description
 
-This is web portfolio for Milos Cemalovic
+This is a web portfolio for Milos Cemalovic
 
 - Vite, React, TypeScript and JavaScript are used for building the app
 - CSS3 and SASS are used for styling
