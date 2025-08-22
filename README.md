@@ -31,4 +31,4 @@ This is web portfolio for Milos Cemalovic
 
 ## Live
 
-- Navigate to `cemalovic.netlify.app/` for live preview
+- Navigate to `cemalovic.netlify.app` for live preview
