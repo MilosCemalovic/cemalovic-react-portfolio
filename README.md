@@ -28,3 +28,7 @@ This is web portfolio for Milos Cemalovic
 - CSS3 and SASS are used for styling
 - Framer Motion is used for animation
 - Vitest is used for unit tests
+
+## Live
+
+- Navigate to `cemalovic.netlify.app/` for live preview
