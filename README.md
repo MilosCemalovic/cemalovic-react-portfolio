@@ -24,7 +24,7 @@ This project was generated with Vite version ^6.1.0
 
 This is web portfolio for Milos Cemalovic
 
-- React, TypeScript, JavaScript are used for building the app
+- React, TypeScript and JavaScript are used for building the app
 - CSS3 and SASS are used for styling
 - Framer Motion is used for animation
 - Vitest is used for unit tests
