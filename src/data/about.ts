@@ -1,11 +1,10 @@
-export interface AboutItem
-{
+export interface AboutItem {
   icon: string
   title: string
   content: string
 }
 
-export const ABOUT: AboutItem[]=[
+export const ABOUT: AboutItem[] = [
   {
     icon: "🚀",
     title: "2022 - 2025",
@@ -20,9 +19,9 @@ export const ABOUT: AboutItem[]=[
   },
   {
     icon: "🎓",
-    title: "2019 - 2020",
+    title: "2018 - 2020",
     content:
-      "As a Web developer, I gained valuable experience in responsive web design, SEO, and PHP while working with a variety of clients. I focused on honing my skills in Object-Oriented Programming (OOP), BEM methodology, and front-end technologies like HTML5, CSS3, SASS, and Bootstrap. Additionally, I worked with PHP and MySQL to build dynamic and data-driven websites, ensuring both performance and scalability. My work emphasized creating SEO-friendly, responsive layouts while adhering to best practices for code maintainability and structure. I also collaborated with clients to understand their needs and deliver tailored solutions that met their requirements. This experience laid a strong foundation for my future endeavors in web development, particularly in the areas of front-end technologies and user experience.",
+      "As a Web Developer, I gained valuable experience in responsive Web Design, SEO, and PHP while working with a variety of clients. I focused on honing my skills in Object-Oriented Programming (OOP), BEM methodology, and front-end technologies like HTML5, CSS3, SASS, and Bootstrap. Additionally, I worked with PHP and MySQL to build dynamic and data-driven websites, ensuring both performance and scalability. My work emphasized creating SEO-friendly, responsive layouts while adhering to best practices for code maintainability and structure. I also collaborated with clients to understand their needs and deliver tailored solutions that met their requirements. This experience laid a strong foundation for my future endeavors in web development, particularly in the areas of front-end technologies and user experience.",
   },
   {
     icon: "💡",

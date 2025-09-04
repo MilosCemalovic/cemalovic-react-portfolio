@@ -1,5 +1,4 @@
-export interface ExperienceItem
-{
+export interface ExperienceItem {
   year: string
   title: string
   company: string
@@ -8,7 +7,7 @@ export interface ExperienceItem
   skills?: string[]
 }
 
-export const EXPERIENCE: ExperienceItem[]=[
+export const EXPERIENCE: ExperienceItem[] = [
   {
     year: "2022 - 2025",
     title: "Frontend Developer",
@@ -75,7 +74,7 @@ export const EXPERIENCE: ExperienceItem[]=[
     ],
   },
   {
-    year: "2019 - 2020",
+    year: "2018 - 2020",
     title: "Freelance Web Developer",
     company: "Cemalovic Web Design",
     description:
