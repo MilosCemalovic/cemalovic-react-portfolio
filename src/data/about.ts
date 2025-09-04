@@ -27,6 +27,6 @@ export const ABOUT: AboutItem[] = [
     icon: "💡",
     title: "2017 - 2018",
     content:
-      "I completed a comprehensive Web Design and PHP course, where I gained solid foundations in HTML, CSS and both Procedural and Object-Oriented Programming (OOP) in PHP. This course helped me develop a strong understanding of web development principles, equipping me with the skills to build functional and well-structured websites.",
+      "I completed a comprehensive Web Design and PHP courses, where I gained solid foundations in HTML, CSS and both Procedural and Object-Oriented Programming in PHP with phpMyAdmin and MySQL database. This course helped me develop a strong understanding of web development principles, equipping me with the skills to build functional and well-structured websites.",
   },
 ]
