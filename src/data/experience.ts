@@ -48,6 +48,7 @@ export const EXPERIENCE: ExperienceItem[] = [
       "As a Junior Angular developer, I’ve successfully deployed an in-house platform creating dynamic, responsive, pixel perfect and localized web application.",
     details: [
       "Angular/TypeScript development",
+      "Angular Reactive Forms",
       "HTML5, CSS3, SASS for layout",
       "Translocoi18n for localization",
       "REST API integration",
