@@ -128,11 +128,12 @@ export const EXPERIENCE: ExperienceItem[] = [
     description:
       "Founded and scaled a successful dance school from the ground up, overseeing all operational aspects including curriculum development, class scheduling, and instructor management.",
     details: [
-      "Orchestrated small and large-scale local & international events including “Beogradska Disko Žurka - Belgrade Disco Fever” (1000+ participants per event), dance workshops, social dance events, and performances, demonstrating strong project management and organizational skills.",
-      "Designed and taught comprehensive dance curricula to diverse student cohorts, honing the ability to explain complex concepts to learners of different skill levels.",
-      "Engineered targeted marketing campaigns and built an engaged community through active communication on social media platforms (Facebook, Instagram, Messenger)  creating a welcoming environment.",
-      "Managing full project life-cycles including budgeting, staffing and program development business, coordinating with multiple vendors and partners to ensure efficient execution of events and classes.",
-      "Cultivated collaborative environments and built strong partnerships, working with diverse teams and clients to deliver successful outcomes.",
+      "Orchestrated small and large-scale local & international events including “Beogradska Disko Žurka - Belgrade Disco Fever” (1000+ participants per event), dance workshops, social dance events and performances, demonstrating strong project management and organizational skills",
+      "Troubleshot last-minute tech issues during live events",
+      "Designed and taught comprehensive dance curricula to diverse student cohorts, honing the ability to explain complex concepts to learners of different skill levels",
+      "Engineered targeted marketing campaigns and built an engaged community through active communication and guerilla tactics on social media platforms (Facebook, Instagram, Messenger) creating a welcoming environment",
+      "Managing full project life-cycles including budgeting, staffing and program development business, coordinating with multiple vendors and partners to ensure efficient execution of events and classes",
+      "Cultivated collaborative environments and built strong partnerships, working with diverse teams and clients to deliver successful outcomes",
     ],
     skills: [
       "Education and Mentorship",
