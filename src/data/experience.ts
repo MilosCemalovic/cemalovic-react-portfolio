@@ -76,7 +76,7 @@ export const EXPERIENCE: ExperienceItem[] = [
   },
   {
     year: "2018 - 2020",
-    title: "Freelance Web Developer",
+    title: "Web Developer",
     company: "Training & Personal Projects",
     description:
       "As a versatile developer, I’ve delved into the exciting realms of responsive web design, SEO and PHP.",
@@ -122,7 +122,7 @@ export const EXPERIENCE: ExperienceItem[] = [
     skills: ["SEO", "SASS", "HTML5", "CSS3"],
   },
   {
-    year: "2013 - Present",
+    year: "2013 - 2020",
     title: "Founder - Owner",
     company: "Naturally Dance",
     description:
