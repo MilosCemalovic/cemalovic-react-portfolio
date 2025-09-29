@@ -1,14 +1,13 @@
-import { EXPERIENCE } from "../../data/experience"
-import styles from "./Experience.module.scss"
+import { EXPERIENCE } from '../../data/experience'
+import styles from './Experience.module.scss'
 
 const Experience = () => {
   return (
     <section
-      id="experience"
+      id='experience'
       className={styles.experience}
-      data-testid="experience-section"
-    >
-      <h2 className="heading" data-testid="experience-heading">
+      data-testid='experience-section'>
+      <h2 className='heading' data-testid='experience-heading'>
         Professional Experience
       </h2>
 
@@ -17,14 +16,24 @@ const Experience = () => {
           <article
             key={index}
             className={styles.item}
-            data-testid="experience-item"
-          >
+            data-testid='experience-item'>
             <div className={styles.year}>{item.year}</div>
 
             <div className={styles.content}>
               <h3 className={styles.title}>
-                {item.title}{" "}
-                <span className={styles.company}>@ {item.company}</span>
+                {item.title}{' '}
+                <span className={styles.company}>
+                  @ {item.company}{' '}
+                  {item.company === 'Naturally Dance' && (
+                    <a
+                      href='https://naturally-dance-org.netlify.app/'
+                      target='_blank'
+                      rel='noreferrer noopener'
+                      className={styles.websiteLink}>
+                      🌐 About
+                    </a>
+                  )}
+                </span>
               </h3>
 
               {item.skills && (

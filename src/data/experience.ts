@@ -11,7 +11,7 @@ export const EXPERIENCE: ExperienceItem[] = [
   {
     year: "2022 - 2025",
     title: "Frontend Developer",
-    company: "EY Consulting",
+    company: "EY",
     description:
       "Working as a React developer, I've been a member of multiple teams involved in building complex IFA (Independent Financial Adviser) web application for buying insurance for a UK based banking client.",
     details: [
@@ -77,7 +77,7 @@ export const EXPERIENCE: ExperienceItem[] = [
   {
     year: "2018 - 2020",
     title: "Freelance Web Developer",
-    company: "Cemalovic Web Design",
+    company: "Training & Personal Projects",
     description:
       "As a versatile developer, I’ve delved into the exciting realms of responsive web design, SEO and PHP.",
     details: [
@@ -120,5 +120,33 @@ export const EXPERIENCE: ExperienceItem[] = [
       "During my internship at a specialized web design company, I gained valuable insights into the world of web development and search engine optimization. I learned the intricacies of SEO - how to optimize content and improve rankings on Google.",
     details: ["HTML5", "CSS3", "SASS", "SEO"],
     skills: ["SEO", "SASS", "HTML5", "CSS3"],
+  },
+  {
+    year: "2013 - Present",
+    title: "Founder - Owner",
+    company: "Naturally Dance",
+    description:
+      "Founded and scaled a successful dance school from the ground up, overseeing all operational aspects including curriculum development, class scheduling, and instructor management.",
+    details: [
+      "Orchestrated small and large-scale local & international events including “Beogradska Disko Žurka - Belgrade Disco Fever” (1000+ participants per event), dance workshops, social dance events, and performances, demonstrating strong project management and organizational skills.",
+      "Designed and taught comprehensive dance curricula to diverse student cohorts, honing the ability to explain complex concepts to learners of different skill levels.",
+      "Engineered targeted marketing campaigns and built an engaged community through active communication on social media platforms (Facebook, Instagram, Messenger)  creating a welcoming environment.",
+      "Managing full project life-cycles including budgeting, staffing and program development business, coordinating with multiple vendors and partners to ensure efficient execution of events and classes.",
+      "Cultivated collaborative environments and built strong partnerships, working with diverse teams and clients to deliver successful outcomes.",
+    ],
+    skills: [
+      "Education and Mentorship",
+      "Public Relations",
+      "Event Management",
+      "Stakeholder Collaboration",
+      "Brand Strategy",
+      "Community Building",
+      "Organizational Skills",
+      "Talent Identification",
+      "Content Creation",
+      "Online Markerting",
+      "Soft Skills",
+      "Public Speaking",
+    ],
   },
 ]
