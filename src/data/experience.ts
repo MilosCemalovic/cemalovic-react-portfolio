@@ -116,11 +116,11 @@ export const EXPERIENCE: ExperienceItem[] = [
   },
   {
     year: "2019",
-    title: "Web Design intern",
+    title: "Intern",
     company: "Studio 77",
     description:
-      "During my internship at a specialized web design company, I gained valuable insights into the world of web development and search engine optimization. I learned the intricacies of SEO - how to optimize content and improve rankings on Google.",
-    details: ["HTML5", "CSS3", "SASS", "SEO"],
+      "During my internship at a specialized Web Design company, I gained valuable insights into the world of web development and search engine optimization. I learned the intricacies of SEO - how to optimize content and improve rankings on Google.",
+    details: ["Assisted in web development projects, focusing on HTML5, CSS3 and SASS to create visually appealing websites", "Implemented Technical and On-page / Off-page SEO (performing in-depth keyword research, optimizing meta descriptions and titles, implementing schema markup, using internal and external links, optimizing images, etc.) to optimize website content and improve search engine rankings", "Gained foundational and hands-on SEO experience in a dynamic environment, enhancing my understanding of SEO and Web Design principles"],
     skills: ["SEO", "SASS", "HTML5", "CSS3"],
   },
   {
