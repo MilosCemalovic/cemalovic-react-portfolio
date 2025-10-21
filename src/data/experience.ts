@@ -92,7 +92,6 @@ export const EXPERIENCE: ExperienceItem[] = [
       "Followed Software Development Life Cycle (SDLC) methodologies to plan, develop, test and deploy web applications efficiently",
       "Demonstrated strong problem-solving skills by debugging and optimizing code for performance and usability",
       "Showcased effective communication skills by documenting project processes and collaborating with peers on development tasks",
-      "Gained hands-on experience in full software development lifecycle (SDLC) from requirements gathering to deployment and maintenance",
     ],
     skills: [
       "HTML5",
