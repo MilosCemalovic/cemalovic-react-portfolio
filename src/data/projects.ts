@@ -3,7 +3,7 @@ import wedding from "../assets/img/cemalovic-milos-protfolio-wedding-website.png
 import spaceweb from "../assets/img/cemalovic-milos-protfolio-spaceweb.png"
 import market from "../assets/img/cemalovic-milos-protfolio-pijaca.jpg"
 import rafting from "../assets/img/cemalovic-milos-protfolio-rafting.jpg"
-import angular from "../assets/img/cemalovic-milos-protfolio-angular.png"
+import angular from "../assets/img/cemalovic-milos-protfolio-angular.jpg"
 import react from "../assets/img/cemalovic-milos-protfolio-react.png"
 import php from "../assets/img/cemalovic-milos-protfolio-php.png"
 
@@ -24,9 +24,10 @@ export const PROJECTS: Project[] = [
   },
   {
     title: "Angular Project",
-    description: "Angular project with multiple APIs and PrimeNG library.",
+    description: "Money Transfer App created with Angular v20.",
     image: angular,
-    githubLink: "https://github.com/MilosCemalovic/primeng-newspaper",
+    liveLink: "https://money-transfer-angular.netlify.app",
+    githubLink: "https://github.com/MilosCemalovic/peachtree",
   },
   {
     title: "Web Design Project",
