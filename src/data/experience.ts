@@ -38,7 +38,7 @@ export const EXPERIENCE: ExperienceItem[] = [
   },
   {
     year: "2022 - 2025",
-    title: "Frontend Developer",
+    title: "Application Consultant / React Developer",
     company: "EY",
     description:
       "Working as a React developer, I've been a member of multiple teams involved in building complex IFA (Independent Financial Adviser) web application for buying insurance for a UK based banking client.",
