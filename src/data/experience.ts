@@ -24,7 +24,7 @@ export const EXPERIENCE: ExperienceItem[] = [
     ],
     skills: [
       "CMS",
-      "Chrome/Edge DevTools",
+      "Browser DevTools",
       "Staging Environments",
       "UI Implementation",
       "Content Integration",
@@ -37,7 +37,7 @@ export const EXPERIENCE: ExperienceItem[] = [
   },
   {
     year: "2022 - 2025",
-    title: "Application Consultant / React Developer",
+    title: "Application Consultant",
     company: "EY",
     description: "Working as a React developer, I've been a member of multiple teams involved in building a complex IFA (Independent Financial Adviser) web application for buying insurance for a UK-based banking client.",
     details: [

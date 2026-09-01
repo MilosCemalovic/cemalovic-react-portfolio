@@ -29,7 +29,7 @@ const Hero = () => {
             ease: 'easeOut',
             delay: 0.5
           }}>
-          I am a Versatile and Results-driven Professional
+          I am a versatile and results-driven professional
         </motion.p>
 
         <div className={styles.buttonWrapper}>
