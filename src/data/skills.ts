@@ -4,6 +4,13 @@ export interface Skill {
 }
 
 export const SKILLS: Skill[] = [
+  { name: "Agile & Scrum", iconId: "icon-scrum" },
+  { name: "SDLC", iconId: "icon-sdlc-1" },
+  { name: "HTML5", iconId: "icon-html5" },
+  { name: "CSS3", iconId: "icon-css3" },
+  { name: "SASS", iconId: "icon-sass" },
+  { name: "SEO", iconId: "icon-seo-1" },
+  { name: "DRY", iconId: "icon-dry-1" },
   { name: "React", iconId: "icon-react" },
   { name: "TypeScript", iconId: "icon-typescript" },
   { name: "JavaScript", iconId: "icon-javascript" },
@@ -16,13 +23,6 @@ export const SKILLS: Skill[] = [
   { name: "Angular Material", iconId: "icon-material" },
   { name: "Prime NG", iconId: "icon-primeng" },
   { name: "Material UI", iconId: "icon-mui" },
-  { name: "SDLC", iconId: "icon-sdlc-1" },
-  { name: "Agile & Scrum", iconId: "icon-scrum" },
-  { name: "HTML5", iconId: "icon-html5" },
-  { name: "CSS3", iconId: "icon-css3" },
-  { name: "SASS", iconId: "icon-sass" },
-  { name: "DRY", iconId: "icon-dry-1" },
-  { name: "SEO", iconId: "icon-seo-1" },
   { name: "Git", iconId: "icon-git" },
   { name: "GitHub", iconId: "icon-github" },
   { name: "Bitbucket", iconId: "icon-bitbucket" },

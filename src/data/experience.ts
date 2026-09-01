@@ -9,6 +9,34 @@ export interface ExperienceItem {
 
 export const EXPERIENCE: ExperienceItem[] = [
   {
+    year: "2026",
+    title: "Content and Implementation Specialist",
+    company: "NDA",
+    description:
+      "Implementing and recreating web content inside the CMS platform by extracting and adapting HTML/CSS-based UI elements into production-ready digital experiences.",
+    details: [
+      "Rebuilding layouts and visual components based on staging environments",
+      "Working extensively with browser developer tools for inspecting HTML/CSS properties and UI behavior",
+      "Extracting and implementing typography settings, font sizes, spacing, colors, and styling using browser developer tools",
+      "Adapting assets and content for digital display experiences",
+      "Performing visual QA and ensuring visual consistency between staging websites and final implementations across digital display content",
+      "Managing content integration workflows and UI adjustments inside the CMS system",
+      "Collaborating with existing web structures and frontend-oriented environments",
+    ],
+    skills: [
+      "CMS",
+      "Chrome/Edge DevTools",
+      "Staging Environments",
+      "UI Implementation",
+      "Content Integration",
+      "Visual QA",
+      "Responsive Layout Adjustments",
+      "Digital Content Systems",
+      "HTML5",
+      "CSS3",
+    ],
+  },
+  {
     year: "2022 - 2025",
     title: "Frontend Developer",
     company: "EY",

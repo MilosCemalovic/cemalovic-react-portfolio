@@ -6,6 +6,11 @@ export interface AboutItem {
 
 export const ABOUT: AboutItem[] = [
   {
+    icon: "🕵️‍♂️",
+    title: "2026 - present",
+    content: "As a CMS Implementation Specialist, I've been responsible for recreating and adapting web content within CMS platforms, transforming UI elements from staging environments into production-ready digital experiences. My work involves extracting and implementing HTML/CSS-based components with precision, using browser developer tools to inspect and replicate typography, spacing, colors, and layout properties. I ensure visual consistency across staging websites and final implementations through meticulous visual QA and responsive adjustments. I collaborate closely with existing web structures and frontend-oriented environments, managing content integration workflows and UI refinements directly inside the CMS system. My attention to detail and proficiency with tools like Chrome/Edge DevTools, HTML5, CSS3, and staging environments have allowed me to maintain high-quality digital display content. I've also developed efficient workflows for asset adaptation and content integration, ensuring seamless transitions from design to production while troubleshooting UI inconsistencies and maintaining design fidelity across multiple projects and platforms."
+  },
+  {
     icon: "🚀",
     title: "2022 - 2025",
     content:

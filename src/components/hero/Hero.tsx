@@ -16,8 +16,7 @@ const Hero = () => {
             duration: 1.5,
             ease: 'easeOut',
             delay: 0.2
-          }}
-        >
+          }}>
           Hello!
         </motion.h1>
 
@@ -29,9 +28,8 @@ const Hero = () => {
             duration: 1.5,
             ease: 'easeOut',
             delay: 0.5
-          }}
-        >
-          I am a Software Developer
+          }}>
+          I am a Versatile and Results-driven Professional
         </motion.p>
 
         <div className={styles.buttonWrapper}>
@@ -39,8 +37,7 @@ const Hero = () => {
             href={cv}
             className={stylesNav.cvButton}
             data-testid='cv-link'
-            download
-          >
+            download>
             <FiDownload className={stylesNav.icon} />
             Download CV
           </a>
