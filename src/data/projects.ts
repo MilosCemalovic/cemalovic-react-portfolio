@@ -22,6 +22,7 @@ export const PROJECTS: Project[] = [
     title: "React Project",
     description: "A web portfolio using React technology with unit tests.",
     image: react,
+    liveLink: "https://cemalovic.netlify.app",
     githubLink: "https://github.com/MilosCemalovic/cemalovic-react-portfolio",
   },
   {
