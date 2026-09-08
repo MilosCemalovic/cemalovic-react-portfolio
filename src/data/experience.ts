@@ -63,8 +63,16 @@ export const EXPERIENCE: ExperienceItem[] = [
       "Testing Library",
       "Storybook",
       "CSS Modules",
+      "JSX",
+      "CSS3",
+      "REST API",
       "Git",
-      "GitHub"
+      "GitHub",
+      "Agile/Scrum",
+      "Jira",
+      "ESLint",
+      "Prettier",
+      "pnpm",
     ]
   },
   {
@@ -100,7 +108,12 @@ export const EXPERIENCE: ExperienceItem[] = [
       "REST API",
       "Transloco i18n",
       "Git",
-      "Bitbucket"
+      "Bitbucket",
+      "Agile",
+      "Redmine",
+      "ESLint",
+      "Prettier",
+      "npm",
     ]
   },
   {
